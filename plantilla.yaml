@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Plantilla para crear una instancia EC2 y un bucket S3
+
+Resources:
+  MiInstanciaEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0fc5d935ebf8bc3bc  # Ubuntu 22.04 LTS
+      IamInstanceProfile: LabInstanceProfile
+      KeyName: clave
+      Tags:
+        - Key: CloudFormation
+          Value: prueba_2
+
+  MiBucketS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: mi-bucket-proyecto-prueba-2
