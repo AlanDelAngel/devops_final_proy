@@ -7,7 +7,7 @@ from botocore.exceptions import ClientError
 # =====================
 BUCKET_NAME = 'mi-bucket-proyecto-prueba-2'
 REGION = 'us-east-1'
-ARCHIVO_LOCAL = '~/devops_final_proy/data_base_auto/datos/ejemplo.csv'  # Ruta local al archivo
+ARCHIVO_LOCAL = '/home/eee_W_4302958/devops_final_proy/data_base_auto/datos/ejemplo.csv'
 OBJETO_S3 = 'uploads/ejemplo.csv'
 NOMBRE_TABLA = 'RegistrosPrueba'
 ID_REGISTRO = '001'
